@@ -1,96 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <!--==================================================== HEADER ====================================================-->
+  <header>
+    <nav class="navbar">
+      <div class="nav_logo">
+        <a href="#" class="logo">Kawin <span class="edit">|</span> Get</a>
+      </div>
+      <div class="nav_menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skill">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <!--========================================================================================================-->
+
+  <!--==================================================== HOME ====================================================-->
+  <div class="container_home" id="home">
+    <div class="header_text">
+      <h1>Hello,</h1>
+      <h2>Welcome to My Portfolio</h2>
+    </div>
+    <div class="circle_1"></div>
+    <div class="circle_2"></div>
+  </div>
+  <!--========================================================================================================-->
+
+  <!--==================================================== ABOUT ====================================================-->
+  <div class="container_about" id="about">
+    <div class="content_about">
+      <div class="info">
+        <div class="topic_about">
+          <h1>About <span class="edit">Me</span></h1>
+        </div>
+        <p><span class="edit">Name</span> : Kawin Kanjanapattana <br>
+          <span class="edit">Nickname</span> : Get <br>
+          <span class="edit">Age</span> : 17 <br>
+          <span class="edit">Date of Birth</span> : 1 June 2006 <br>
+          <span class="edit">Nationality</span> : Thai <br>
+          <span class="edit">School</span> : Mathayom Watsing School <br>
+          <span class="edit">Program</span> : English Program <br>
+          <span class="edit">Hobbies</span> : Exercise , Sing a Song <br>
+          <span class="edit">Interest</span> : Programming Language <br>
+
+        </p>
+      </div>
+    </div>
+    <div class="education">
+      <div class="topic_education">
+        <h2>Educational Qualification</h2>
+      </div>
+      <ul class="education_about">
+        <li>
+          <img src="images/Kornpitacksuksa.png" alt="" height="80px">
+          <div>
+            <h3>Kornpitacksuksa School</h3>
+            <p>Upper Elementary School Years 4-6</p>
+          </div>
+        </li>
+        <li>
+          <img src="images/Mathayomwatsing.png" alt="" height="80px">
+          <div>
+            <h3>Mathayom Watsing School</h3>
+            <p>Lower Secondary School Years 1-3</p>
+          </div>
+        </li>
+        <li>
+          <img src="images/Mathayomwatsing.png" alt="" height="80px">
+          <div>
+            <h3>Mathayom Watsing School</h3>
+            <p>Upper Secondary School Year 4-6</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--========================================================================================================-->
+
+  <!--==================================================== SKILLS ====================================================-->
+  <div class="container_skill" id="skill">
+    <div class="topic_skill">
+      <h1>Skills</h1>
+    </div>
+    <div class="content_skill">
+      <p>I have skills in design and decoration from the game "Minecraft"</p>
+      <ul>
+        <li>
+          <i class="fa-brands fa-html5"></i>
+          <h2>HTML</h2>
+        </li>
+        <li>
+          <i class="fa-brands fa-css3-alt"></i>
+          <h2>CSS</h2>
+        </li>
+        <li>
+          <i class="fa-solid fa-font-awesome"></i>
+          <h2>Font-Awesome</h2>
+        </li>
+        <li>
+          <i class="fa-brands fa-bootstrap"></i>
+          <h2>Bootstrap</h2>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--========================================================================================================-->
+
+  <!--==================================================== WORK ====================================================-->
+  <div class="container_work" id="work">
+    <div class="topic_work">
+      <h1>Work</h1>
+    </div>
+    <div class="content_work">
+      <div class="work_one">
+        <img src="images/image_work1.png" alt="">
+        <p>HTML , CSS - Introduce Yourself</p>
+        <a href="projects/Work1/index.html" target="_blank">view <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="work_two">
+        <img src="images/image_work2.png" alt="">
+        <p>HTML , CSS - Diary 5 days</p>
+        <a href="projects/Work2/index.html" target="_blank">view <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="work_three">
+        <img src="images/image_work3.png" alt="">
+        <p>HTML , CSS - Form</p>
+        <a href="projects/Work3/index.html" target="_blank">view <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+  <!--========================================================================================================-->
+
+  <!--==================================================== CONTACT ====================================================-->
+
+  <div class="container_contact" id="contact">
+    <div class="topic_contact">
+      <h1>Contact</h1>
+    </div>
+    <div class="content_contact">
+      <ul>
+        <li>
+          <h2><i class="fa-solid fa-envelope"></i> <span class="edit">Email</span> : kawin.ka.get@gmail.com</h2>
+        </li>
+        <li>
+          <h2><i class="fa-solid fa-phone"></i> <span class="edit">Phone-number</span> : 082-761-8363</h2>
+        </li>
+        <li>
+          <h2><i class="fa-brands fa-line"></i> <span class="edit">Line</span> : kawin.get</h2>
+        </li>
+        <li>
+          <h2><i class="fa-brands fa-github"></i> <span class="edit">Github</span> : GetMaEng</h2>
+        </li>
+      </ul>
+      <div class="icon">
+        <div><i class="fa-brands fa-instagram"></i></div>
+        <div><i class="fa-brands fa-facebook"></i></div>
+      </div>
+    </div>
+  </div>
+  <!--========================================================================================================-->
+</body>
+
 </html>

@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=Borel&family=Cormorant:wght@300&family=Foldit&family=Indie+Flower&family=Kanit:wght@300&family=Poppins:wght@300;500&family=Prompt&family=Roboto&family=Rubik&family=Space+Mono:ital,wght@0,700;1,700&family=Wix+Madefor+Text:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Rubik";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: 35%;
+    background-attachment: scroll;
+    background-size: cover;
+    min-width: 200vh;
+    overflow-x: hidden;
+}
+
+/*==================================================== HEADER ====================================================*/
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(28, 4, 45);
+    background: linear-gradient(90deg, rgba(28, 4, 45, 1) 25%, rgba(88, 16, 138, 0.6896008403361344) 68%);
+    backdrop-filter: blur(10px);
+    height: 75px;
+}
+
+.nav_logo {
+    margin-left: 50px;
+}
+
+.nav_logo .logo {
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(0, 128, 255);
+    text-decoration: none;
+}
+
+.nav_logo .logo .edit {
+    color: white;
+}
+
+.nav_menu {
+    margin-right: 100px;
+}
+
+.nav_menu {
+    list-style: none;
+}
+
+.nav_menu a {
+    margin-right: 25px;
+    padding: 25px 20px 5px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav_menu a::after {
+    content: "";
+    border-bottom: 6px solid rgb(0, 128, 255);
+    position: absolute;
+    top: 30%;
+    right: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: top 0.5s;
+}
+
+.nav_menu a:hover::after {
+    top: 0;
+    opacity: 1;
+}
+
+/*========================================================================================================*/
+
+/*==================================================== HOME ====================================================*/
+
+.container_home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+}
+
+.circle_1 {
+    height: 600px;
+    width: 650px;
+    background: rgb(58, 12, 89);
+    background: linear-gradient(180deg, rgba(58, 12, 89, 1) 25%, rgba(88, 16, 138, 1) 100%);
+    opacity: 0.4;
+    border-radius: 87% 13% 74% 26% / 45% 35% 65% 55%;
+    position: relative;
+    top: -100px;
+    animation: spin 40s linear infinite;
+}
+
+.circle_2 {
+    height: 700px;
+    width: 750px;
+    background: rgb(58, 12, 89);
+    background: linear-gradient(180deg, rgba(58, 12, 89, 1) 25%, rgba(88, 16, 138, 1) 100%);
+    opacity: 0.4;
+    border-radius: 14% 86% 59% 41% / 44% 51% 49% 56%;
+    position: absolute;
+    bottom: -100px;
+    z-index: -1;
+    animation: spin 40s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.header_text {
+    margin-left: 100px;
+    margin-bottom: 80px;
+}
+
+.header_text h1 {
+    font-size: 75px;
+    color: white;
+}
+
+.header_text h2 {
+    font-size: 60px;
+    color: rgb(0, 128, 255)
+}
+
+/*========================================================================================================*/
+
+/*==================================================== ABOUT ====================================================*/
+
+.container_about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(19, 19, 19);
+    height: 113vh;
+}
+
+.content_about .info {
+    margin-bottom: 400px;
+    margin-right: 80px;
+}
+
+.content_about .info .topic_about h1 {
+    font-size: 60px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.content_about .info .topic_about h1 .edit {
+    color: rgb(0, 128, 255);
+    text-shadow: 0px 0px 5px rgb(0, 128, 255), 0px 0px 10px currentColor;
+}
+
+.content_about .info p {
+    margin-bottom: -200px;
+    margin-left: -50px;
+    padding: 30px;
+    font-size: 30px;
+    color: white;
+    border: 5px solid white;
+    border-radius: 30px;
+    box-shadow: 10px 10px 4px 5px rgba(0, 128, 255, 0.496);
+}
+
+.content_about .info p .edit {
+    font-weight: bold;
+    color: rgb(0, 128, 255);
+}
+
+.education {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -180px;
+}
+
+.education .topic_education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic_education h2 {
+    padding: 20px;
+    margin-bottom: 30px;
+    color: rgb(0, 128, 255);
+    font-size: 35px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.education_about {
+    margin-left: -100px;
+}
+
+.education_about li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.education_about li img {
+    padding: 10px;
+    margin-left: 75px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 5px solid rgb(0, 128, 255);
+    border-radius: 70px;
+}
+
+.education_about li div {
+    text-align: center;
+    margin-left: 100px;
+    padding: 20px 20px 5px 20px;
+    background-color: white;
+    border: 5px solid rgb(0, 128, 255);
+    border-radius: 100px;
+
+}
+
+.education_about li div p {
+    color: black;
+    opacity: 0.6;
+    padding-top: 5px;
+}
+
+/*========================================================================================================*/
+
+/*==================================================== SKILLS ====================================================*/
+
+.container_skill {
+    padding: 80px;
+    height: 80vh;
+}
+
+.topic_skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic_skill h1 {
+    display: inline-block;
+    font-size: 50px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid rgb(0, 128, 255);
+    color: rgb(0, 128, 255);
+}
+
+.content_skill p {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: white;
+    opacity: 0.6;
+}
+
+.content_skill ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content_skill ul li {
+    list-style: none;
+}
+
+.content_skill ul li h2 {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.content_skill ul li i {
+    font-size: 50px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.content_skill ul li .fa-html5 {
+    color: rgb(255, 115, 0);
+}
+
+.content_skill ul li .fa-css3-alt {
+    color: rgb(0, 140, 255);
+}
+
+.content_skill ul li .fa-font-awesome {
+    color: rgb(103, 193, 250);
+}
+
+.content_skill ul li .fa-bootstrap {
+    color: blueviolet;
+}
+
+/*========================================================================================================*/
+
+/*==================================================== WORK ====================================================*/
+
+.container_work {
+    padding: 80px;
+    height: 80vh;
+    background-color: rgba(30, 30, 30, 1);
+}
+
+.topic_work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic_work h1 {
+    display: inline-block;
+    font-size: 50px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid rgb(0, 128, 255);
+    color: rgb(0, 128, 255);
+}
+
+.content_work {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.content_work .work_one,
+.work_two,
+.work_three {
+    height: 60vh;
+    width: 50vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 4px 5px 2px rgba(0, 128, 255, 0.496);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.content_work .work_one img,
+.work_two img,
+.work_three img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30vh;
+    width: 45vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.content_work .work_one p,
+.work_two p,
+.work_three p {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.content_work .work_one a,
+.work_two a,
+.work_three a {
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 40px;
+    color: black;
+    opacity: 0.6;
+}
+
+.content_work .work_one:hover,
+.work_two:hover,
+.work_three:hover {
+    transform: translate(0px, -25px);
+}
+
+.content_work .work_one::after,
+.work_two::after,
+.work_three::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 128, 255);
+    border-radius: inherit;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/*========================================================================================================*/
+
+/*==================================================== CONTACT ====================================================*/
+.container_contact {
+    padding: 80px;
+    height: 80vh;
+}
+
+.topic_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic_contact h1 {
+    display: inline-block;
+    font-size: 50px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid rgb(0, 128, 255);
+    color: rgb(0, 128, 255);
+}
+
+.content_contact {
+    margin-top: 50px;
+}
+
+.content_contact ul {
+    padding: 20px;
+    list-style: none;
+}
+
+.content_contact ul li h2 {
+    font-size: 25px;
+    color: white;
+    padding: 15px;
+}
+
+.content_contact ul li h2 .edit {
+    color: rgb(0, 128, 255);
+}
+
+.icon {
+    display: flex;
+    margin-left: 40px;
+    font-size: 40px;
+    color: white;
+}
+
+.icon i {
+    margin: 0px 20px 0 20px;
+}
+
+/*========================================================================================================*/
