@@ -305,7 +305,7 @@ header {
     padding: 40px;
     background-color: white;
     border-radius: 10px;
-    
+
 }
 
 .content_skill ul li .fa-html5 {
@@ -425,11 +425,11 @@ header {
 
 /*==================================================== CONTACT ====================================================*/
 .container_contact {
-    padding: 80px;
-    height: 80vh;
+    height: 90vh;
 }
 
 .topic_contact {
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -447,30 +447,53 @@ header {
     margin-top: 50px;
 }
 
-.content_contact ul {
-    padding: 20px;
-    list-style: none;
-}
-
-.content_contact ul li h2 {
+.content_contact h2 {
+    writing-mode: vertical-lr;
+    margin-top: 120px;
+    margin-left: 50px;
+    transform: rotate(180deg);
     font-size: 25px;
     color: white;
-    padding: 15px;
+    position: relative;
 }
 
-.content_contact ul li h2 .edit {
+.content_contact h2 .edit {
     color: rgb(0, 128, 255);
 }
 
 .icon {
     display: flex;
-    margin-left: 40px;
-    font-size: 40px;
-    color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 350px;
+    position: relative;
 }
 
 .icon i {
-    margin: 0px 20px 0 20px;
+    margin: 0px 40px 0 40px;
+    font-size: 100px;
+    color: white;
+    position: relative;
 }
 
+.icon i:hover {
+    color: black;
+}
+
+.icon i::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    background: rgb(32, 139, 242);
+    background: linear-gradient(90deg, rgba(32, 139, 242, 1) 0%, rgba(124, 94, 200, 1) 25%, rgba(179, 37, 210, 1) 50%, rgba(213, 15, 195, 1) 75%, rgba(251, 0, 170, 1) 100%);
+    animation: animate 3.5s linear infinite;
+    filter: blur(20px);
+    background-size: 500%;
+}
 /*========================================================================================================*/
